@@ -25,7 +25,7 @@ export class HttpExceptionFilter implements ExceptionFilter {
     const message =
       exception instanceof HttpException
         ? exception.getResponse()
-        : "Internal server error";
+        : "Internal  server error";
 
     this.logger.error(
       `${request.method} ${request.url}`,
